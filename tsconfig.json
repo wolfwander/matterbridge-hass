@@ -37,5 +37,5 @@
     "stripInternal": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/__test__/*"]
+  "exclude": ["node_modules", "lib", "**/*.spec.ts", "**/*.test.ts", "**/__test__/*"]
 }
