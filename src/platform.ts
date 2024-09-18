@@ -5,7 +5,7 @@ import {
   MatterConnector,
   MatterRegistry,
 } from '@home-assistant-matter-hub/core';
-//import type { MatterDevice } from '@home-assistant-matter-hub/core';
+import type { MatterDevice } from '@home-assistant-matter-hub/core';
 import type { DeviceTypeDefinition } from '@project-chip/matter.js/device';
 import { Matterbridge, MatterbridgeDevice, MatterbridgeDynamicPlatform, PlatformConfig } from 'matterbridge';
 import type { AnsiLogger } from 'matterbridge/logger';
@@ -24,7 +24,7 @@ export class HomeAssistantPlatform extends MatterbridgeDynamicPlatform implement
 
   private createDevice(
     vendorName: string,
-  ): (entity: HomeAssistantMatterEntity, definition: DeviceTypeDefinition) => MatterbridgeDevice {
+  ): (entity: HomeAssistantMatterEntity, definition: DeviceTypeDefinition) => MatterDevice {
     return (entity, definition) => {
       const device = new MatterbridgeDevice(definition);
 
