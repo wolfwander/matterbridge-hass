@@ -24,7 +24,7 @@ export class HomeAssistantPlatform extends MatterbridgeDynamicPlatform implement
 
   private createDevice(
     vendorName: string,
-  ): (entity: HomeAssistantMatterEntity, definition: DeviceTypeDefinition) => MatterDevice {
+  ): (entity: HomeAssistantMatterEntity, definition: DeviceTypeDefinition) => MatterbridgeDevice {
     return (entity, definition) => {
       const device = new MatterbridgeDevice(definition);
 
