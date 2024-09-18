@@ -24,7 +24,6 @@
     "noImplicitOverride": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "inlineSourceMap": true,
     "inlineSources": true,
     "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
