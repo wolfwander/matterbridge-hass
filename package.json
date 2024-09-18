@@ -69,7 +69,7 @@
     "@types/node": "22.5.3",
     "@project-chip/matter.js": "^0.9.4",
     "@types/ws": "^8.5.11",
-    "matterbridge": "^1.4.1",
+    "matterbridge": "^1.5.7",
     "eslint": "9.9.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jest": "28.8.2",
