@@ -1,22 +1,18 @@
 {
-  "name": "matterbridge-example-dynamic-platform",
-  "version": "1.0.20",
-  "description": "Matterbridge dynamic plugin",
-  "author": "https://github.com/Luligu",
+  "name": "matterbridge-hass",
+  "version": "1.0.0",
+  "description": "Matterbridge Home Assistant",
+  "author": "https://github.com/wolfwander",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Luligu/matterbridge-example-dynamic-platform.git"
+    "url": "git+https://github.com/wolfwander/matterbridge-hass.git"
   },
   "bugs": {
-    "url": "https://github.com/Luligu/matterbridge-example-dynamic-platform/issues"
-  },
-  "funding": {
-    "type": "buymeacoffee",
-    "url": "https://www.buymeacoffee.com/luligugithub"
+    "url": "https://github.com/wolfwander/matterbridge-hass/issues"
   },
   "keywords": [
     "matterbridge",
@@ -84,6 +80,10 @@
   },
   "dependencies": {
     "node-ansi-logger": "3.0.0",
-    "node-persist-manager": "1.0.8"
+    "node-persist-manager": "1.0.8",
+    "@home-assistant-matter-hub/core": "^2.7.2",
+    "json5": "^2.2.3",
+    "winston": "^3.13.1",
+    "ws": "^8.18.0"
   }
 }
