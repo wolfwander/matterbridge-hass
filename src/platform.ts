@@ -6,7 +6,7 @@ import {
   MatterRegistry,
 } from '@home-assistant-matter-hub/core';
 //import type { MatterDevice } from '@home-assistant-matter-hub/core';
-import type { DeviceTypeDefinition } from '@project-chip/matter.js/device';
+import type { DeviceTypeDefinition } from 'project-chip/matter.js/device';
 import { Matterbridge, MatterbridgeDevice, MatterbridgeDynamicPlatform, PlatformConfig } from 'matterbridge';
 import type { AnsiLogger } from 'matterbridge/logger';
 import { createHash } from 'node:crypto';
