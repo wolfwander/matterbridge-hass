@@ -16,7 +16,7 @@ export class NodeAnsiTransport extends Transport {
     this.ansiLogger = new AnsiLogger({ logTimestampFormat: TimestampFormat.TIME_MILLIS });
   }
 
-  log(info: Record<string, string>, next: () => void) {
+  override log(info: Record<string, string>, next: () => void) {
     const { level, message, service, entityId, aspect, hint } = info;
     const name = [service, entityId, aspect].filter((it) => it != undefined).join(' / ');
     const text = `${message}${hint ? `\n${hint}` : ''}`;
