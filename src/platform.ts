@@ -26,7 +26,7 @@ export class HomeAssistantPlatform extends MatterbridgeDynamicPlatform implement
     vendorName: string,
   ): (entity: HomeAssistantMatterEntity, definition: DeviceTypeDefinition) => MatterDevice {
     return (entity, definition) => {
-      const device = new MatterbridgeDevice(definition);
+      const device = new MatterDevice(definition);
 
       const productName = definition.name;
       entity.matter.serialNumber = createHash('md5').update(entity.entity_id).digest('hex').substring(0, 30);
